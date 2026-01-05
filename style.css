@@ -335,6 +335,15 @@ html, body {
   margin-bottom: 24px;
 }
 
+@media (max-width: 576px) {
+  .status-pill {
+    margin-top: 14px;      /* ⬇ move a little down */
+    margin-bottom: 20px;   /* tighten spacing */
+    font-size: 10px;       /* slightly smaller for mobile */
+    letter-spacing: 2px;   /* better readability */
+  }
+}
+
 .main-title {
   font-size: clamp(2.5rem, 14vw, 9rem);
   font-weight: 900;
