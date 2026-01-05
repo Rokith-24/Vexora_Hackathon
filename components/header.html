@@ -1,65 +1,49 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
-  <div class="container-fluid px-lg-5">
 
-    <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container-fluid nav-container">
+
+    <!-- BRAND -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="photos/acm-sist.png" alt="SIST" class="nav-logo">
-      <div class="d-flex flex-column" style="line-height: 1.1">
-        <span
-          class="text-white fw-bold h3 mb-0"
-          style="font-family: 'Plus Jakarta Sans'; letter-spacing: 1px;"
-        >
-          VEXORA 26
-        </span>
-        <span
-          class="text-danger mono-text"
-          style="font-size: 12px; letter-spacing: 5px;"
-        >
-          24hrs Hackathon
-        </span>
+
+      <div class="brand-text ms-2">
+        <span class="brand-title">VEXORA 26</span>
+        <span class="brand-subtitle mono-text">24hrs Hackathon</span>
       </div>
     </a>
 
+    <!-- TOGGLER -->
     <button
-      class="navbar-toggler border-0"
+      class="navbar-toggler custom-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#vexoraNav"
+      aria-controls="vexoraNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
-      <span style="color: white; font-size: 24px">☰</span>
+      <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- NAV MENU -->
     <div class="collapse navbar-collapse" id="vexoraNav">
-      <ul class="navbar-nav mx-auto align-items-center gap-4">
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#about">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#tracks">TRACKS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#bounty">PRIZES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#faq">FAQ</a>
-        </li>
+      <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item"><a class="nav-link fw-bold" href="#about">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#tracks">TRACKS</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#bounty">PRIZES</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#faq">FAQ</a></li>
       </ul>
+
+      <!-- DESKTOP ONLY -->
 
       <div class="d-none d-lg-flex align-items-center gap-3">
         <div class="text-end" style="line-height: 1.2">
           <p class="text-white small fw-bold mb-0">ACM STUDENT CHAPTER</p>
-          <p
-            class="text-secondary mb-0"
-            style="font-size: 10px; max-width: 180px;"
-          >
-            SATHYABAMA INSTITUTE OF SCIENCE & TECHNOLOGY
+          <p class="text-secondary mb-0" style="font-size: 10px; max-width: 180px;">
+            SATHYABAMA INSTITUTE OF SCIENCE and TECHNOLOGY
           </p>
         </div>
-        <img
-          src="photos/sist-logo.png"
-          alt="ACM"
-          class="nav-logo"
-          style="height: 75px;"
-        >
+        <img src="photos/sist-logo.png" alt="ACM" class="nav-logo" style="height: 75px;">
       </div>
     </div>
 

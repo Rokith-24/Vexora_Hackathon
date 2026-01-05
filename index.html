@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VEXORA '26 | SIST x ACM</title>
 
+
+    <link rel="icon" type="image/png" href="photos/favicon.jpeg" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -25,6 +31,12 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css" />
+
+
+    <!-- GSAP -->
+    <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
 
     <!-- MODULE LOADER -->
     <script>
@@ -53,15 +65,23 @@
           }
         }
 
-        /* ✅ INIT AFTER ALL COMPONENTS ARE READY */
+        /* INIT FEATURES */
         if (typeof initHeroSection === "function") initHeroSection();
         if (typeof initTimelineSection === "function") initTimelineSection();
         if (typeof initFAQ === "function") initFAQ();
         if (typeof initScrollDrag === "function") initScrollDrag();
 
+        /* ✅ INIT AOS HERE */
+        AOS.init({
+          duration: 900,
+          easing: "ease-out-cubic",
+          once: true,
+          offset: window.innerWidth < 768 ? 120 : 300,
+          anchorPlacement: "top-bottom"
+        });
+
         window.dispatchEvent(new Event("scroll"));
       }
-
       loadModules();
     </script>
 
@@ -72,8 +92,7 @@
     <script src="./js/faq.js"></script>
     <script src="./js/timeline.js"></script>
     <script src="./js/hero-blizzard.js"></script>
-    <!-- <script src="js/counter.js"></script> -->
-
+    <script src="./js/countDown.js"></script>
   </head>
 
   <body>
@@ -89,8 +108,6 @@
     <!-- MAIN CONTENT -->
     <main id="main-content">
       <div id="about" class="reveal"></div>
-       <!-- COUNTER / MISSION CONTROL -->
-      <!-- <div id="counter" class="reveal"></div> -->
       <div id="tracks" class="reveal"></div>
       <div id="bounty" class="reveal"></div>
       <div id="timeline" class="reveal"></div>
@@ -101,5 +118,8 @@
 
     <!-- FOOTER -->
     <div id="footer"></div>
+
+    
+
   </body>
 </html>

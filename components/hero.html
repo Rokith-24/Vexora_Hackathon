@@ -1,19 +1,53 @@
-<div class="hero-canvas-wrapper" id="hero-trigger">
 
+
+<div class="hero-canvas-wrapper" id="hero-trigger">
   <!-- Blizzard Canvas -->
   <canvas id="hero-blizzard"></canvas>
 
+  <!-- Visual FX -->
   <div class="ambient-glow"></div>
   <div class="bottom-gradient-mask"></div>
 
+  <!-- HERO UI -->
   <div class="hero-ui">
     <div class="hero-content text-center">
-      <div class="status-pill mono">STRANGER THINGS × ACM SIST</div>
 
-      <h1 class="main-title">VEXORA <span>26</span></h1>
+      <!-- Tagline -->
+      <div class="status-pill mono">
+        STRANGER THINGS × ACM SIST
+      </div>
 
-      <p class="hero-subtitle">24-Hour Inter-College Hackathon</p>
+      <!-- Title -->
+      <h1 class="main-title">
+        VEXORA<span>'26</span>
+      </h1>
 
+      <!-- Subtitle -->
+      <p class="hero-subtitle">
+        24-Hour Inter-College Hackathon
+      </p>
+
+      <!-- Countdown -->
+      <div class="countdown-wrapper mt-4 mb-3">
+        <div class="countdown-box">
+          <span id="cd-days">00</span>
+          <small>DAYS</small>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-hours">00</span>
+          <small>HOURS</small>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-minutes">00</span>
+          <small>MIN</small>
+        </div>
+        <div class="countdown-box">
+          <span id="cd-seconds">00</span>
+          <small>SEC</small>
+        </div>
+      </div>
+
+      <!-- CTA -->
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSdGXvybD-DCu-gCj30oOtdOBTdUE6yfdqMZqRMS4lUk5U-HTA/viewform"
         target="_blank"
@@ -21,6 +55,35 @@
       >
         Register Now!
       </a>
+
+      <!-- META CARDS -->
+      <div
+        class="hero-meta-cards d-flex flex-column flex-md-row justify-content-center gap-4 mt-4 px-3"
+        data-aos="fade-in"
+        data-aos-delay="200"
+      >
+
+        <!-- DATE CARD -->
+        <div class="hero-meta-card">
+          <i class="bi bi-calendar-event"></i>
+          <div class="meta-text">
+            <small class="mono">DATE</small>
+            <p class="meta-date">Jan 31,2026</p>
+            <span class="meta-day">Saturday</span>
+          </div>
+        </div>
+
+        <!-- TEAM SIZE CARD -->
+        <div class="hero-meta-card">
+          <i class="bi bi-people-fill"></i>
+          <div class="meta-text">
+            <small class="mono">TEAM SIZE</small>
+            <p class="meta-date">2 – 4 Members</p>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 </div>
