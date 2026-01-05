@@ -337,7 +337,7 @@ html, body {
 
 @media (max-width: 576px) {
   .status-pill {
-    margin-top: 14px;      /* ⬇ move a little down */
+    margin-top: 20px;      /* ⬇ move a little down */
     margin-bottom: 20px;   /* tighten spacing */
     font-size: 10px;       /* slightly smaller for mobile */
     letter-spacing: 2px;   /* better readability */
@@ -362,6 +362,13 @@ html, body {
   letter-spacing: 2px;
   color: rgba(255,255,255,0.75);
   text-transform: uppercase;
+}
+
+@media (max-width : 576px) {
+  .hero-subtitle {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .hero-meta {
