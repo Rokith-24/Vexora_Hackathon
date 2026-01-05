@@ -337,7 +337,7 @@ html, body {
 
 @media (max-width: 576px) {
   .status-pill {
-    margin-top: 20px;      /* ⬇ move a little down */
+    margin-top: 30px;      /* ⬇ move a little down */
     margin-bottom: 20px;   /* tighten spacing */
     font-size: 10px;       /* slightly smaller for mobile */
     letter-spacing: 2px;   /* better readability */
